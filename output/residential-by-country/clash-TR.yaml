@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
   type: vless
-  server: ir.dl.stormrp.ir
-  port: 443
-  uuid: 2592b640-5060-4cc8-9ad7-bd2834a2d45b
+  server: 104.17.169.13
+  port: 2053
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ir.dl.stormrp.ir
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
   network: ws
   ws-opts:
-    path: /api-mp4
+    path: /axch1mttbxz2k55y01
     headers:
-      Host: ir.dl.stormrp.ir
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
