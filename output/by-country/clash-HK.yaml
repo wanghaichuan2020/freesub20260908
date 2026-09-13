@@ -6,54 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   type: vmess
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  type: vmess
-  server: 8.218.184.4
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  type: vmess
   server: 47.83.19.148
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -74,17 +26,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
 rules:
 - MATCH,PROXIES
