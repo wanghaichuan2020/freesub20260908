@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 172.67.151.109
+  server: 172.67.134.170
   port: 443
   uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
   udp: true
@@ -27,7 +27,7 @@ proxies:
   udp: true
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
-  server: 172.67.134.170
+  server: 172.67.151.109
   port: 443
   uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
   udp: true
@@ -41,16 +41,12 @@ proxies:
       Host: jdzit4e4urks.xwzohsebujps.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vless
-  server: 158.94.216.50
-  port: 32306
-  uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
+  server: add.life-pro.ir
+  port: 8082
+  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: edge
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   type: ss
   server: 188.132.174.236
@@ -58,14 +54,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
   udp: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  type: vless
-  server: add.life-pro.ir
-  port: 8082
-  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,7 +64,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,6 +74,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 rules:
 - MATCH,PROXIES

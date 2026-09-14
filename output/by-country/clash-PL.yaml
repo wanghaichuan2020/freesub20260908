@@ -13,19 +13,32 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: 104.25.146.77
+  server: 104.24.30.89
   port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: khoda.ak-khoda.workers.dev
+      Host: rayan-007.nastaran.dpdns.org
 - name: 🇵🇱 PL 03 - xiaohe
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: 94.183.209.58
   port: 443
@@ -38,7 +51,21 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 04 - xiaohe
+- name: 🇵🇱 PL 05 - xiaohe
+  type: vless
+  server: 104.25.146.77
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 06 - xiaohe
   type: vless
   server: 104.25.22.24
   port: 443
@@ -52,19 +79,6 @@ proxies:
     path: /sync
     headers:
       Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 05 - xiaohe
-  type: vless
-  server: 94.183.209.59
-  port: 443
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.209.59
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,6 +89,7 @@ proxy-groups:
   - 🇵🇱 PL 03 - xiaohe
   - 🇵🇱 PL 04 - xiaohe
   - 🇵🇱 PL 05 - xiaohe
+  - 🇵🇱 PL 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,5 +100,6 @@ proxy-groups:
   - 🇵🇱 PL 03 - xiaohe
   - 🇵🇱 PL 04 - xiaohe
   - 🇵🇱 PL 05 - xiaohe
+  - 🇵🇱 PL 06 - xiaohe
 rules:
 - MATCH,PROXIES

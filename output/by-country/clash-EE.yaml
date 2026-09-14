@@ -15,16 +15,7 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - xiaohe
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 03 - xiaohe
-  type: vless
-  server: 104.24.30.89
+  server: 104.24.31.89
   port: 443
   uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
@@ -36,6 +27,15 @@ proxies:
     path: /
     headers:
       Host: rayan-007.nastaran.dpdns.org
+- name: 🇪🇪 EE 03 - xiaohe
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
