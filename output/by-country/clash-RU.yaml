@@ -6,6 +6,40 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
+  server: 46.8.200.91
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /casc
+    headers:
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: f2f4e2dc-3e7b-402f-a461-b48acc6aa310
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoid2JBOTRVclNMOVdBSVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    headers:
+      Host: steep-bonus-8e6a.amirhon1376.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: vless
   server: 78.159.247.246
   port: 443
   uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
@@ -18,13 +52,20 @@ proxies:
     path: /ws
     headers:
       Host: sb2.hat.onl
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: ss
-  server: 195.58.48.137
-  port: 60111
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: vless
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sb2.hat.onl
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sb2.hat.onl
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +73,9 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +83,8 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
