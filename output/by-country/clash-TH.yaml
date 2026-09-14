@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 05e7abc2-46e1-4a23-9cdc-173ce17eb0d4
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip
+    path: /ws
     headers:
-      Host: round-term-947c.41-332.workers.dev
+      Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 02 - xiaohe
   type: vless
   server: 43.133.110.81
@@ -32,19 +32,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇭 TH 03 - xiaohe
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 2fb22d40-598f-4890-85a6-d69928b1fd55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: odd-cloud-f2a1.73-12e.workers.dev
-- name: 🇹🇭 TH 04 - xiaohe
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -67,7 +54,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
-  - 🇹🇭 TH 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +62,5 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
-  - 🇹🇭 TH 04 - xiaohe
 rules:
 - MATCH,PROXIES
