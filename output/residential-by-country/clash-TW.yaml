@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   type: vless
-  server: 60.248.219.52
+  server: 60.248.219.53
   port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
+  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
   udp: true
   tls: true
   skip-cert-verify: true
@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.52
+      Host: 60.248.219.53
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: ss
   server: 36.224.185.173
