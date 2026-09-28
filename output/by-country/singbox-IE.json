@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇪 IE 01 - xiaohe",
+        "🇮🇪 IE 02 - xiaohe",
+        "🇮🇪 IE 03 - xiaohe",
+        "🇮🇪 IE 04 - xiaohe",
+        "🇮🇪 IE 05 - xiaohe",
+        "🇮🇪 IE 06 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇪 IE 01 - xiaohe",
+        "🇮🇪 IE 02 - xiaohe",
+        "🇮🇪 IE 03 - xiaohe",
+        "🇮🇪 IE 04 - xiaohe",
+        "🇮🇪 IE 05 - xiaohe",
+        "🇮🇪 IE 06 - xiaohe"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
