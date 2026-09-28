@@ -30,32 +30,46 @@ proxies:
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
   type: vless
-  server: 38.180.225.247
-  port: 2053
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  server: 172.64.88.251
+  port: 8880
+  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: yf.962456.xyz
   network: ws
   ws-opts:
-    path: /proxyip=kr.william.us.ci
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: yf.962456.xyz
+      Host: patient-cake-39c7.44-e7a.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  type: vless
-  server: 38.180.100.80
+  type: vmess
+  server: 8ntzyr5knivfabat.v.3dns.vip
   port: 443
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  uuid: f0b7bbd66aad458aaec0e9acaab768b6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: yf.962456.xyz
+  servername: 8ntzyr5knivfabat.v.3dns.vip
   network: ws
   ws-opts:
-    path: /proxyip=kr.william.us.ci
+    path: /ws-vmess
     headers:
-      Host: yf.962456.xyz
+      Host: 8ntzyr5knivfabat.v.3dns.vip
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  type: vless
+  server: 172.66.170.53
+  port: 8880
+  uuid: 38ede46b-d237-4c76-9de1-a10738642adc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: summer-hat-ba5c.430.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +79,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +89,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 05 - xiaohe
 rules:
 - MATCH,PROXIES
