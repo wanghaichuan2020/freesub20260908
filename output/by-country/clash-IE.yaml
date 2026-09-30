@@ -5,36 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
-  type: vless
-  server: purple-butterfly-8496.erfannull36.workers.dev
+  type: ss
+  server: 20.123.34.66
   port: 443
-  uuid: 29fb68bb-ff05-4fd4-8393-cc6c05d81a79
+  cipher: chacha20-ietf-poly1305
+  password: r5D6YOSrT6kC76ro
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: purple-butterfly-8496.erfannull36.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: purple-butterfly-8496.erfannull36.workers.dev
 - name: 🇮🇪 IE 02 - xiaohe
   type: vless
   server: 45.141.234.138
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 03 - xiaohe
-  type: vless
-  server: 104.21.201.219
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
@@ -53,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
 rules:
 - MATCH,PROXIES
