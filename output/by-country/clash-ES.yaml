@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  type: vless
+  server: 114.129.43.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime04.workers.dev
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   type: vless
   server: 212.227.235.66
@@ -25,10 +31,10 @@ proxies:
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: ss
-  server: 108.181.121.226
+  server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  password: qItG8SueYQcP
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   type: ss
