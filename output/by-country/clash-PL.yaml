@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 149.50.105.60
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 70.34.252.154
+  port: 80
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /vws/
+    path: /
     headers:
-      Host: bab-6.site
+      Host: 70.34.252.154
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: 70.34.255.101
@@ -33,17 +32,16 @@ proxies:
       Host: 70.34.255.101
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  server: 78.17.109.97
+  port: 6443
+  uuid: dfe8ea9e-fd77-48e6-86ee-7bc1019de1e7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.255.101
+  reality-opts:
+    public-key: NP5_ymQeqYr_EP7aAPIl3YBRghX60zLq6m74Ht4bFUI
+  servername: ok.ru
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: 70.34.252.154
@@ -59,9 +57,9 @@ proxies:
       Host: 70.34.252.154
 - name: 🇵🇱 PL 05 - xiaohe
   type: vless
-  server: 70.34.252.154
+  server: 70.34.255.101
   port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
   tls: false
   skip-cert-verify: true
@@ -69,7 +67,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 70.34.252.154
+      Host: 70.34.255.101
 proxy-groups:
 - name: PROXIES
   type: select

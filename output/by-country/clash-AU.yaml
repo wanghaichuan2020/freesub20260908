@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 GE 01 - xiaohe
-  type: vless
-  server: 172.67.159.161
+- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  type: vmess
+  server: aksai.org
   port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: geo.shkola112.site
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /api-vless
+    path: /linkvws
     headers:
-      Host: geo.shkola112.site
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇪 GE 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇪 GE 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
