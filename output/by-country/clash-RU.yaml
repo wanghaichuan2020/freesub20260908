@@ -13,30 +13,30 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 79.174.92.222
-  port: 443
-  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
+  server: 185.229.9.176
+  port: 46018
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
-  servername: m.vk.com
+    public-key: een4U3X5mnY1gH2swiakXS9BJ8P4omf8Qp_s8sTp_3Y
+  servername: ligastavok.ru
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 172.67.173.89
+  server: 91.215.43.248
   port: 443
-  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+  servername: my.kempekl.online
   network: ws
   ws-opts:
-    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
-      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+      Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: ss
   server: 46.29.166.27
