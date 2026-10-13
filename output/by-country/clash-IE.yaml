@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
-  type: ss
-  server: 20.234.97.18
+  type: vless
+  server: 172.67.74.90
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: K5sEvZiKmens104B
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cvhpyn.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome+
+    headers:
+      Host: cvhpyn.pages.dev
 - name: 🇮🇪 IE 02 - xiaohe
   type: vless
   server: 23.95.225.10
@@ -22,30 +29,9 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 03 - xiaohe
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: GayYa2V7pUbJBfKu
-  udp: true
-- name: 🇮🇪 IE 04 - xiaohe
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: K5sEvZiKmens104B
-  udp: true
-- name: 🇮🇪 IE 05 - xiaohe
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: GayYa2V7pUbJBfKu
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
-  - 🇮🇪 IE 04 - xiaohe
-  - 🇮🇪 IE 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
-  - 🇮🇪 IE 04 - xiaohe
-  - 🇮🇪 IE 05 - xiaohe
 rules:
 - MATCH,PROXIES
