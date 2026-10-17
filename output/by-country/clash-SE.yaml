@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: 77.110.97.245
+  server: sub.merky.top
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /
+    path: /merky-connect/de6/
     headers:
-      Host: ccc.010304.xyz
+      Host: sub.merky.top
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
   server: 5.178.109.174
@@ -32,13 +32,6 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 03 - xiaohe
-  type: ss
-  server: mui.firzav.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: ZJdYmMiJBWkbTZ5nExBRpQ_f7uIG7wL4
-  udp: true
-- name: 🇸🇪 SE 04 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -51,7 +44,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - xiaohe
+- name: 🇸🇪 SE 04 - xiaohe
   type: vless
   server: 94.143.231.146
   port: 443
@@ -64,7 +57,20 @@ proxies:
   ws-opts:
     path: /merky-connect/de6/
     headers:
-      Host: sub.merky.top
+      Host: 94.143.231.146
+- name: 🇸🇪 SE 05 - xiaohe
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 06 - xiaohe
   type: vless
   server: 94.143.231.146
@@ -78,10 +84,10 @@ proxies:
   ws-opts:
     path: /merky-connect/de6/
     headers:
-      Host: 94.143.231.146
+      Host: sub.merky.top
 - name: 🇸🇪 SE 07 - xiaohe
   type: vless
-  server: sub.merky.top
+  server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -95,31 +101,18 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 08 - xiaohe
   type: vless
-  server: 94.143.231.146
+  server: 77.110.97.245
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: 94.143.231.146
-- name: 🇸🇪 SE 09 - xiaohe
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -133,7 +126,6 @@ proxy-groups:
   - 🇸🇪 SE 06 - xiaohe
   - 🇸🇪 SE 07 - xiaohe
   - 🇸🇪 SE 08 - xiaohe
-  - 🇸🇪 SE 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,6 +139,5 @@ proxy-groups:
   - 🇸🇪 SE 06 - xiaohe
   - 🇸🇪 SE 07 - xiaohe
   - 🇸🇪 SE 08 - xiaohe
-  - 🇸🇪 SE 09 - xiaohe
 rules:
 - MATCH,PROXIES
