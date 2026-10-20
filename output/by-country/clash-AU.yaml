@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
   servername: apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   type: vless
   server: 212.81.47.99
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
   servername: apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   type: vless
   server: 212.81.47.99
