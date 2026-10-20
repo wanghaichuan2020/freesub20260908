@@ -6,31 +6,19 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 02 - xiaohe
-  type: vless
   server: 199.232.239.239
   port: 443
-  uuid: 434f0115-bf40-44ac-cf80-5c14f4b6f6b3
+  uuid: 05355ffb-a8f3-473b-cb9c-c8401897b03f
   udp: true
   tls: true
   skip-cert-verify: true
   servername: www.firefox.com
   network: ws
   ws-opts:
-    path: /?ed=2056/?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
+    path: /?ed=2056#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: mpkoe7ypcibr80p102020.global.ssl.fastly.net
-- name: 🇫🇮 FI 03 - xiaohe
+- name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -42,6 +30,20 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - xiaohe
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 05355ffb-a8f3-473b-cb9c-c8401897b03f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.firefox.com
+  network: ws
+  ws-opts:
+    path: /?ed=2056#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: mpkoe7ypcibr80p102020.global.ssl.fastly.net
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 45.144.234.157
