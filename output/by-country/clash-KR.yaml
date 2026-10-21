@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
   type: vmess
   server: seoul02.zgjok.com
   port: 443
@@ -32,35 +20,21 @@ proxies:
     path: ''
     headers:
       Host: ''
+- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 22078
-  cipher: aes-256-gcm
-  password: 585f0e10-7b51-4f2e-a13d-479b045171bd
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 40029
-  cipher: aes-128-gcm
-  password: 585f0e10-7b51-4f2e-a13d-479b045171bd
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 22078
-  cipher: aes-256-gcm
-  password: 585f0e10-7b51-4f2e-a13d-479b045171bd
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
   type: ss
   server: 141.164.45.187
   port: 9090
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -72,7 +46,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -83,14 +57,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,10 +68,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -115,9 +78,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 09 - xiaohe
 rules:
 - MATCH,PROXIES
