@@ -15,22 +15,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vless
-  server: 45.144.214.144
-  port: 8446
-  uuid: 633c1bb0-60d5-41fb-a9c4-11f408b264ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
-  servername: storage-p2.googleapis.com
-  client-fingerprint: edge
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
   server: sable56.fars-remen.ir
   port: 8446
@@ -42,7 +30,7 @@ proxies:
     public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
   servername: storage-p2.googleapis.com
   client-fingerprint: edge
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
   server: 155.103.71.142
   port: 443
@@ -53,9 +41,19 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vmess
+  server: free.ertebatgoostar.ir
+  port: 443
+  uuid: c9eab439-53bf-46e4-ba58-fc368ae1ee8c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
