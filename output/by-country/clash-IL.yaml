@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇱 IL 01 - xiaohe
   type: vless
-  server: 185.253.75.119
+  server: 177.3.208.65
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /vless-il
     headers:
-      Host: ccc.010304.xyz
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
