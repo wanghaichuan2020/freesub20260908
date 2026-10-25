@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
   type: vless
-  server: 103.86.49.57
+  server: support.zoom.us.v2ray.simspeedup.com
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 TH 02 - xiaohe
   type: vless
   server: 104.16.10.9
@@ -46,20 +46,6 @@ proxies:
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 04 - xiaohe
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 05 - xiaohe
   type: ss
   server: pphfree2.mvpnpvpn.de5.net
   port: 52351
@@ -75,7 +61,6 @@ proxy-groups:
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
   - 🇹🇭 TH 04 - xiaohe
-  - 🇹🇭 TH 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,6 +70,5 @@ proxy-groups:
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
   - 🇹🇭 TH 04 - xiaohe
-  - 🇹🇭 TH 05 - xiaohe
 rules:
 - MATCH,PROXIES
