@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 NO 01 - xiaohe
+- name: 🇺🇦 UA 01 - xiaohe
   type: ss
-  server: 185.213.23.63
-  port: 990
+  server: 104.253.216.227
+  port: 49917
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 NO 01 - xiaohe
+  - 🇺🇦 UA 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 NO 01 - xiaohe
+  - 🇺🇦 UA 01 - xiaohe
 rules:
 - MATCH,PROXIES
