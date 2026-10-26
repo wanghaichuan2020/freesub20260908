@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
   type: vless
-  server: vl.cocopon.top
-  port: 2053
-  uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vl.cocopon.top
-  network: ws
-  ws-opts:
-    path: /fp=random
-    headers:
-      Host: vl.cocopon.top
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  type: vless
-  server: 172.64.158.170
+  server: 104.18.41.190
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -29,26 +15,40 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  type: vless
+  server: 8.47.69.60
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 03 - xiaohe
   type: vless
-  server: 162.159.254.3
+  server: 104.18.33.100
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: tamoai.ccwu.cc
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
     headers:
-      Host: jp3.yohototo.top
+      Host: tamoai.ccwu.cc
 - name: 🌐 其他地区 (Other) 04 - xiaohe
   type: vless
-  server: 172.64.152.241
+  server: 172.64.158.170
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -62,7 +62,7 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 05 - xiaohe
   type: vless
-  server: ccc.010304.xyz
+  server: 104.18.45.38
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -71,12 +71,12 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 06 - xiaohe
   type: vless
-  server: 104.18.37.127
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -90,7 +90,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 07 - xiaohe
   type: vless
-  server: 104.19.33.25
+  server: 104.21.70.21
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -104,49 +104,6 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 08 - xiaohe
   type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 09 - xiaohe
-  type: vmess
-  server: 104.21.7.133
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 10 - xiaohe
-  type: vless
-  server: 104.21.0.87
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 11 - xiaohe
-  type: vless
   server: 104.21.221.158
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -159,9 +116,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 12 - xiaohe
+- name: 🌐 其他地区 (Other) 09 - xiaohe
   type: vless
-  server: 172.64.158.170
+  server: 172.64.152.241
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -170,165 +127,12 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 13 - xiaohe
+- name: 🌐 其他地区 (Other) 10 - xiaohe
   type: vless
-  server: 104.16.10.48
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 14 - xiaohe
-  type: vless
-  server: 104.21.219.160
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 15 - xiaohe
-  type: vless
-  server: 104.18.45.38
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 16 - xiaohe
-  type: vless
-  server: 104.16.10.251
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 17 - xiaohe
-  type: vless
-  server: 8.47.69.60
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 18 - xiaohe
-  type: vless
-  server: 104.18.45.38
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 19 - xiaohe
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 20 - xiaohe
-  type: vless
-  server: 104.21.221.158
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 21 - xiaohe
-  type: vless
-  server: 104.18.0.181
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 22 - xiaohe
-  type: vless
-  server: 104.16.10.63
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 23 - xiaohe
-  type: vless
-  server: 104.16.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 24 - xiaohe
-  type: vless
-  server: 104.19.146.104
+  server: 104.17.56.124
   port: 443
   uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
   udp: true
@@ -340,90 +144,7 @@ proxies:
     path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
     headers:
       Host: tamoai.ccwu.cc
-- name: 🌐 其他地区 (Other) 25 - xiaohe
-  type: vless
-  server: 104.18.35.86
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 26 - xiaohe
-  type: vless
-  server: 104.19.48.107
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 27 - xiaohe
-  type: vless
-  server: 104.18.45.38
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 28 - xiaohe
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 29 - xiaohe
-  type: vless
-  server: 104.18.45.38
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 30 - xiaohe
-  type: vless
-  server: 172.64.190.13
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 31 - xiaohe
+- name: 🌐 其他地区 (Other) 11 - xiaohe
   type: vless
   server: 104.16.10.104
   port: 443
@@ -437,63 +158,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 32 - xiaohe
-  type: vless
-  server: 8.47.69.60
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 33 - xiaohe
-  type: vless
-  server: 172.67.155.1
-  port: 443
-  uuid: 00db64cf-4ea8-1a65-b9f6-97ca00000022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ehsan22r.6l-l-gcxlkszilqjjg5fm4tyjftw9sv.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ehsan22r.6l-l-gcxlkszilqjjg5fm4tyjftw9sv.workers.dev
-- name: 🌐 其他地区 (Other) 34 - xiaohe
-  type: vless
-  server: 104.17.173.208
-  port: 443
-  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tamoai.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
-    headers:
-      Host: tamoai.ccwu.cc
-- name: 🌐 其他地区 (Other) 35 - xiaohe
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 36 - xiaohe
+- name: 🌐 其他地区 (Other) 12 - xiaohe
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -506,91 +171,75 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 37 - xiaohe
+- name: 🌐 其他地区 (Other) 13 - xiaohe
   type: vless
-  server: 104.18.0.181
+  server: 104.18.45.38
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /ws
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
     headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 38 - xiaohe
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 14 - xiaohe
   type: vless
-  server: 162.159.254.3
+  server: ccc.010304.xyz
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /fp=chrome
     headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 39 - xiaohe
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 15 - xiaohe
   type: vless
-  server: 104.16.111.102
+  server: 104.17.183.136
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: tamoai.ccwu.cc
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
     headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 40 - xiaohe
+      Host: tamoai.ccwu.cc
+- name: 🌐 其他地区 (Other) 16 - xiaohe
   type: vless
-  server: 172.64.190.13
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /fp
     headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 41 - xiaohe
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 17 - xiaohe
   type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /fp
     headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 42 - xiaohe
-  type: vless
-  server: 104.16.10.135
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws#/?----?ed=512
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 43 - xiaohe
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 18 - xiaohe
   type: vless
   server: 104.21.221.158
   port: 443
@@ -604,7 +253,188 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 44 - xiaohe
+- name: 🌐 其他地区 (Other) 19 - xiaohe
+  type: vless
+  server: 172.64.158.170
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 20 - xiaohe
+  type: vless
+  server: 104.19.164.155
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 21 - xiaohe
+  type: vless
+  server: 104.17.20.66
+  port: 443
+  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tamoai.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
+    headers:
+      Host: tamoai.ccwu.cc
+- name: 🌐 其他地区 (Other) 22 - xiaohe
+  type: vless
+  server: 8.47.69.60
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 23 - xiaohe
+  type: vless
+  server: 104.21.70.228
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 24 - xiaohe
+  type: vless
+  server: 104.18.45.38
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 25 - xiaohe
+  type: vless
+  server: 104.19.50.221
+  port: 443
+  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tamoai.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
+    headers:
+      Host: tamoai.ccwu.cc
+- name: 🌐 其他地区 (Other) 26 - xiaohe
+  type: vless
+  server: 104.18.39.28
+  port: 443
+  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tamoai.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
+    headers:
+      Host: tamoai.ccwu.cc
+- name: 🌐 其他地区 (Other) 27 - xiaohe
+  type: vless
+  server: 172.67.77.54
+  port: 443
+  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tamoai.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
+    headers:
+      Host: tamoai.ccwu.cc
+- name: 🌐 其他地区 (Other) 28 - xiaohe
+  type: vless
+  server: 104.16.158.109
+  port: 443
+  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tamoai.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
+    headers:
+      Host: tamoai.ccwu.cc
+- name: 🌐 其他地区 (Other) 29 - xiaohe
+  type: vless
+  server: 104.19.145.193
+  port: 443
+  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tamoai.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
+    headers:
+      Host: tamoai.ccwu.cc
+- name: 🌐 其他地区 (Other) 30 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 31 - xiaohe
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 32 - xiaohe
   type: vless
   server: 172.64.146.66
   port: 443
@@ -618,9 +448,9 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 45 - xiaohe
+- name: 🌐 其他地区 (Other) 33 - xiaohe
   type: vless
-  server: 104.18.41.190
+  server: 104.21.221.158
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -629,9 +459,23 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=unsafe
     headers:
       Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 34 - xiaohe
+  type: vless
+  server: 104.17.16.95
+  port: 443
+  uuid: 45ceaca9-30f4-4035-85b7-8f83493911d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tamoai.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=163.192.47.40,47.57.181.17,34.83.245.149,4.155.83.212,64.227.62.172,24.144.68.139,161.35.232.123,107.170.248.68
+    headers:
+      Host: tamoai.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -671,17 +515,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 32 - xiaohe
   - 🌐 其他地区 (Other) 33 - xiaohe
   - 🌐 其他地区 (Other) 34 - xiaohe
-  - 🌐 其他地区 (Other) 35 - xiaohe
-  - 🌐 其他地区 (Other) 36 - xiaohe
-  - 🌐 其他地区 (Other) 37 - xiaohe
-  - 🌐 其他地区 (Other) 38 - xiaohe
-  - 🌐 其他地区 (Other) 39 - xiaohe
-  - 🌐 其他地区 (Other) 40 - xiaohe
-  - 🌐 其他地区 (Other) 41 - xiaohe
-  - 🌐 其他地区 (Other) 42 - xiaohe
-  - 🌐 其他地区 (Other) 43 - xiaohe
-  - 🌐 其他地区 (Other) 44 - xiaohe
-  - 🌐 其他地区 (Other) 45 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -721,16 +554,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 32 - xiaohe
   - 🌐 其他地区 (Other) 33 - xiaohe
   - 🌐 其他地区 (Other) 34 - xiaohe
-  - 🌐 其他地区 (Other) 35 - xiaohe
-  - 🌐 其他地区 (Other) 36 - xiaohe
-  - 🌐 其他地区 (Other) 37 - xiaohe
-  - 🌐 其他地区 (Other) 38 - xiaohe
-  - 🌐 其他地区 (Other) 39 - xiaohe
-  - 🌐 其他地区 (Other) 40 - xiaohe
-  - 🌐 其他地区 (Other) 41 - xiaohe
-  - 🌐 其他地区 (Other) 42 - xiaohe
-  - 🌐 其他地区 (Other) 43 - xiaohe
-  - 🌐 其他地区 (Other) 44 - xiaohe
-  - 🌐 其他地区 (Other) 45 - xiaohe
 rules:
 - MATCH,PROXIES
