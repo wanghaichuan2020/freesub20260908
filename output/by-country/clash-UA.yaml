@@ -20,7 +20,7 @@ proxies:
       Host: pol.netvia.ir
 - name: 🇺🇦 UA 02 - xiaohe
   type: ss
-  server: 104.253.216.227
+  server: staging.lastilhame.monster
   port: 49917
   cipher: chacha20-ietf-poly1305
   password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
