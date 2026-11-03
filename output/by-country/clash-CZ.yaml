@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: 153.76.190.31
+  port: 2083
+  uuid: d65fb384-5029-4edf-bdc7-0f5960600e3d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: speedtestmark.com
   network: ws
   ws-opts:
-    path: /
+    path: /vless-ws
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: 153.76.190.31
 proxy-groups:
 - name: PROXIES
   type: select
