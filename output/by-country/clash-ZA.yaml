@@ -5,13 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xiaohe
+  type: vless
+  server: 169.40.42.235
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+  servername: yahoo.com
+  client-fingerprint: random
+- name: 🇿🇦 ZA 02 - xiaohe
   type: ss
   server: 102.133.165.160
   port: 16233
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
-- name: 🇿🇦 ZA 02 - xiaohe
+- name: 🇿🇦 ZA 03 - xiaohe
   type: ss
   server: 102.37.156.224
   port: 443
@@ -25,6 +37,7 @@ proxy-groups:
   - AUTO
   - 🇿🇦 ZA 01 - xiaohe
   - 🇿🇦 ZA 02 - xiaohe
+  - 🇿🇦 ZA 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +45,6 @@ proxy-groups:
   proxies:
   - 🇿🇦 ZA 01 - xiaohe
   - 🇿🇦 ZA 02 - xiaohe
+  - 🇿🇦 ZA 03 - xiaohe
 rules:
 - MATCH,PROXIES

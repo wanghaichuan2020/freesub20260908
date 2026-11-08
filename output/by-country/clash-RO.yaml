@@ -13,10 +13,10 @@ proxies:
   udp: true
 - name: 🇷🇴 RO 02 - xiaohe
   type: ss
-  server: 82.152.132.211
-  port: 8044
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: dCamglzrORaopqbpBlptzbt9QdiH4CSN
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 proxy-groups:
 - name: PROXIES
