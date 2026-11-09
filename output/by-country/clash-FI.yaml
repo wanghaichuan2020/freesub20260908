@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -27,6 +17,16 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 02 - xiaohe
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 45.144.234.157
