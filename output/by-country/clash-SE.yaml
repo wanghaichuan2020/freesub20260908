@@ -12,13 +12,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇸🇪 SE 02 - xiaohe
-  type: ss
-  server: 62.182.193.228
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
-  udp: true
-- name: 🇸🇪 SE 03 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -31,6 +24,13 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 03 - xiaohe
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
