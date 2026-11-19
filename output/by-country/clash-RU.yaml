@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: vless
-  server: 193.233.219.98
-  port: 443
-  uuid: 265ecca2-4733-49de-b2c9-ed7f0e999655
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: daily-author.ru
-  network: ws
-  ws-opts:
-    path: /api/vless
-    headers:
-      Host: vpn-rating.space
 proxy-groups:
 - name: PROXIES
   type: select
