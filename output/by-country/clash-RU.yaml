@@ -6,62 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: ws3.falmero.store
-  port: 443
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: canvas.merlano.monster
-  network: ws
-  ws-opts:
-    path: /api/de1/stream
-    headers:
-      Host: ws3.falmero.store
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 193.233.219.98
-  port: 443
-  uuid: 265ecca2-4733-49de-b2c9-ed7f0e999655
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: daily-author.ru
-  network: ws
-  ws-opts:
-    path: /api/vless
-    headers:
-      Host: vpn-rating.space
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: foliose.merlano.monster
-  port: 443
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: foliose.merlano.monster
-  network: ws
-  ws-opts:
-    path: /api/de2/stream
-    headers:
-      Host: foliose.merlano.monster
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: vless
-  server: vellum.merlano.monster
-  port: 443
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sequoia.merlano.monster
-  network: ws
-  ws-opts:
-    path: /api/de1/stream
-    headers:
-      Host: vellum.merlano.monster
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: vless
   server: 147.45.175.81
   port: 443
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
@@ -80,19 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
