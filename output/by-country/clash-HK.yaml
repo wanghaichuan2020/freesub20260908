@@ -27,19 +27,20 @@ proxies:
   password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
   udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  type: vless
-  server: 104.21.55.229
-  port: 443
-  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ave-qualifications-choices-populations.trycloudflare.com
   network: ws
   ws-opts:
-    path: /a8b8606819ef
+    path: /arki?ed=2048
     headers:
-      Host: ave-qualifications-choices-populations.trycloudflare.com
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
