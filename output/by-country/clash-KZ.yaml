@@ -32,7 +32,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
