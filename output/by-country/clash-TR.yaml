@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: 104.21.44.113
+  server: 172.67.199.12
   port: 443
   uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
@@ -29,18 +29,41 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
-  server: 18.172.170.80
+  server: 143.246.136.128
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
+  server: 172.67.199.12
   port: 443
   uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: deldgy5xz81zm.cloudfront.net
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: deldgy5xz81zm.cloudfront.net
+      Host: still-bar-5702.vpnetwork3567.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  type: vless
+  server: 104.21.44.113
+  port: 443
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: still-bar-5702.vpnetwork3567.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +72,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,5 +82,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES
